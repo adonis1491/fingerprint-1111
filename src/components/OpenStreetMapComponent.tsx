@@ -30,10 +30,10 @@ export default function OpenStreetMapComponent({ location }: Props) {
       center={position} 
       zoom={13} 
       style={{ 
-        height: '300px', 
-        width: '400px',
+        height: '250px', 
+        width: '560px',
         borderRadius: '8px',
-        boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+        boxShadow: '0 2px 4px rgba(0,0,0,0.1)' 
       }}
     >
       <TileLayer

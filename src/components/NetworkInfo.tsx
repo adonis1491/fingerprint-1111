@@ -26,13 +26,13 @@ export default function NetworkInfo({ networkInfo }: Props) {
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-4">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-sm font-medium text-gray-700">Network Fingerprint</h2>
+        <h2 className="text-sm font-medium text-gray-700">網路指紋</h2>
         <Network className="w-4 h-4 text-gray-400" />
       </div>
       
       <div className="space-y-3">
         <div>
-          <p className="text-xs text-gray-500">Client Hello Hash</p>
+          <p className="text-xs text-gray-500">用戶端Hash</p>
           <p className="text-sm font-mono break-all">{networkInfo.networkFingerprint.clientHello}</p>
         </div>
         

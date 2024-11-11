@@ -1,11 +1,17 @@
+import React from 'react';
 import OpenStreetMapComponent from './OpenStreetMapComponent';
+import RiskLevelComponent from './RiskLevelComponent';
 
-// ... 其他代碼 ...
+const ParentComponent = () => {
+  const location = { lat: 25.0330, lng: 121.5654 }; // 示例位置
 
-<div style={{ position: 'relative', minHeight: '700px' }}>
-  <HardwareConfiguration />
-  <div style={{ position: 'absolute', right: '20px', bottom: '20px' }}>
-    <NetworkStatus />
-    <OpenStreetMapComponent location={location} />
-  </div>
-</div> 
+  return (
+    <div style={{ position: 'relative', minHeight: '700px' }}>
+      <h1>我的地圖</h1>
+      <OpenStreetMapComponent location={location} />
+      <RiskLevelComponent /> {/* 使用風險評級組件 */}
+    </div>
+  );
+};
+
+export default ParentComponent; 

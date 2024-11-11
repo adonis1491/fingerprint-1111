@@ -1,5 +1,5 @@
 const networkStatusStyle = {
-  position: 'absolute',
+  position: 'relative',
   right: '20px',
   bottom: '340px',  // 在地圖上方
   width: '400px',

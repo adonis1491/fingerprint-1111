@@ -59,7 +59,7 @@ const resources = {
       },
       sections: {
         riskLevel: "風險等級",
-        networkStatus: "網路狀態",
+        networkStatus: "所在位置",
         browserInfo: "瀏覽器資訊",
         anomalies: "異常狀況",
         deviceInfo: "裝置資訊",

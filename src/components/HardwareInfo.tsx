@@ -13,23 +13,23 @@ export default function HardwareInfo({ deviceInfo }: Props) {
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-4">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-sm font-medium text-gray-700">Hardware Configuration</h2>
+        <h2 className="text-sm font-medium text-gray-700">硬體配置</h2>
         <Cpu className="w-4 h-4 text-gray-400" />
       </div>
       
       <div className="space-y-4">
         <div>
-          <p className="text-xs text-gray-500">GPU</p>
+          <p className="text-xs text-gray-500">顯卡規格</p>
           <p className="text-sm font-medium">{deviceInfo.gpu}</p>
         </div>
         
         <div>
-          <p className="text-xs text-gray-500">CPU Architecture</p>
+          <p className="text-xs text-gray-500">CPU架構</p>
           <p className="text-sm font-medium">{deviceInfo.cpuArchitecture}</p>
         </div>
         
         <div>
-          <p className="text-xs text-gray-500">Total Memory</p>
+          <p className="text-xs text-gray-500">記憶體</p>
           <p className="text-sm font-medium">
             {typeof deviceInfo.totalMemory === 'number' 
               ? `${deviceInfo.totalMemory} GB` 
@@ -40,7 +40,7 @@ export default function HardwareInfo({ deviceInfo }: Props) {
         {deviceInfo.batteryLevel !== undefined && (
           <div>
             <div className="flex items-center gap-2">
-              <p className="text-xs text-gray-500">Battery</p>
+              <p className="text-xs text-gray-500">電池電量</p>
               <Battery className="w-4 h-4 text-gray-400" />
             </div>
             <div className="flex items-center gap-2">
